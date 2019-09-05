@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>House Price Prediction</title>
+</head>
+<body>
+    <h2>Predict House Prices</h2>
+
+        <form action='' method="POST">
+
+        {{ myform.hidden_tag() }}  
+        {{ myform.bedrooms.label()}}
+        {{ myform.bedrooms(placeholder='Enter Number of Bedrooms')}}
+
+        <br>
+        <br>
+
+        {{ myform.bathrooms.label()}}
+        {{ myform.bathrooms(placeholder='Enter Number of Bathrooms')}}
+
+        <br>
+        <br>
+        {{ myform.sqft_living.label()}}
+        {{ myform.sqft_living(placeholder='Enter Sqft_Living')}}
+        <br>
+        <br>
+
+        {{ myform.floors.label()}}
+        {{ myform.floors(placeholder='Enter Number of Floors')}}
+        <br>
+        <br>
+
+        {{ myform.sqft_above.label()}}
+        {{ myform.sqft_above(placeholder='Enter Sqft_Above')}}
+        <br>
+        <br>
+        {{ myform.sqft_lot.label()}}
+        {{ myform.sqft_lot(placeholder='Enter The Sqft_Lot')}}
+        <br>
+        <br>
+
+        {{ myform.sqft_lot15.label()}}
+        {{ myform.sqft_lot15(placeholder='Enter Sqft_Lot15')}}
+        <br>
+        <br>
+
+        {{ myform.yr_built.label()}}
+        {{ myform.yr_built}}
+        <br>
+        <br>
+
+        {{ myform.condition.label()}}
+        {{ myform.condition}}
+        <br>
+        <br>
+
+        {{ myform.zipcode.label()}}
+        {{ myform.zipcode}}
+        <br>
+        <br>
+
+        {{ myform.submit}}
+        <br>
+        <br>
+  
+
+    {% for message in get_flashed_messages() %} 
+        <h3>{{message}}</h3>
+
+    {% endfor %}
+
+    </form>
+</body>
+</html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name = 'viewport' content
+
+    </head>
+</html>
